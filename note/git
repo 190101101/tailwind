@@ -1,1 +1,2 @@
-git reset = git commit -m -> remove
+git reset = git add . -> reset
+git reset --hard HEAD^ -> git commit -m "1.1"

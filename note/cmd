@@ -1,1 +1,2 @@
-npx tailwindcss -i ./src/public/css/style.css -o ./src/public/css/output.css --watch
+npm start
+cd app
