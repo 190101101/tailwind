@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gemunu: ['"Gemunu Libre"', 'sans-serif'],
-        open: ['"Gemunu Libre"', 'sans-serif'],
+        gemunu: ['Gemunu Libre', 'sans-serif'],
+        open: ['Open Sans', 'sans-serif'],
       },
       colors: {
         'gega-red': '#BC1A45',
