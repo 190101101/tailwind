@@ -1,0 +1,19 @@
+https://tailwindcss.com/docs/installation
+
+create style.css
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+index.html => <link rel="stylesheet" href="./public/css/output.css">
+npx tailwindcss -i ./src/public/css/style.css -o ./src/public/css/output.css --watch
+
+
+package.json => "scripts": {
+    "start": "npx tailwindcss -i ./src/public/css/style.css -o ./src/public/css/output.css --watch"
+},
+
+npm start
