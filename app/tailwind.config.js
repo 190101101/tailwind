@@ -20,6 +20,9 @@ module.exports = {
           '2xl': '1140px',
         }
       },
+      spacing:{
+        '128':'32rem'
+      }
     }
   },
   plugins: [],
