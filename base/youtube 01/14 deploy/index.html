@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./public/css/output.css" />
+    <title>tailwind</title>
+  </head>
+  <body class="font-open dark">
+
+    <!--Dark/Light Toggle-->
+    <div class="absolute top-1 left-5 cursor-pointer text-lg">
+      <i class="fa-solid fa-sun text-white" id="sun"></i>
+      <i class="fa-solid fa-moon text-black hidden" id="moon"></i>
+    </div>
+
+    <!-- header -->
+    <header class="dark:bg-black bg-white py-6 lg:py-12 text-gega-grey uppercase">
+      <div
+        class="container flex items-center justify-between space-x-8 lg:space-x-16"
+      >
+        <a
+          href=""
+          class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold text-gega-grey text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey"
+          >GEGA</a
+        >
+
+        <!-- mobile menu -->
+        <div class="block md:hidden pr-4">
+          <div class="space-y-1 cursor-pointer">
+            <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- navigation -->
+        <nav class="hidden md:flex justify-between flex-1">
+          <div class="flex items-center text-lg space-x-4 lg:space-x-8">
+            <a href="" class="hover:text-gega-melon transition duration-200"
+              >movies</a
+            >
+            <a href="" class="hover:text-gega-melon transition duration-200"
+              >celebrities</a
+            >
+            <a href="" class="hover:text-gega-melon transition duration-200"
+              >blog</a
+            >
+            <a href="" class="hover:text-gega-melon transition duration-200"
+              >news</a
+            >
+            <a href="" class="hover:text-gega-melon transition duration-200"
+              >about</a
+            >
+          </div>
+          <div class="flex items-center space-x-4 lg:space-x-8">
+            <form>
+              <div class="group border-r px-4 mx-4 py-1 border-gega-red">
+                <input
+                  type="text"
+                  class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-24 lg:w-44 transition duration-200"
+                />
+                <button class="-ml-4 transition duration-200">
+                  <i class="fas fa-search group-hover:text-gega-red"></i>
+                </button>
+              </div>
+            </form>
+            <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
+              <a href="" class="">login</a>
+              <a
+                href=""
+                class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-grey cursor-pointer transition duration-200 whitespace-nowrap"
+                >sign up</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="h-96 lg:h-128 group relative">
+      <img
+        class="w-full h-full object-cover"
+        src="https://gega-project.netlify.app/images/batman.jpg"
+      />
+
+      <!-- hero content -->
+      <div
+        class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black"
+      >
+        <!-- hero content container -->
+        <div class="container pl-10 lg:pl-0">
+          <h3
+            class="text-gega-melon traking-wider group-hiver:md-1 duration-200"
+          >
+            Action, Drama, Thriller
+          </h3>
+          <h1
+            class="text-4xl lg:text-6xl text-gega-grey traking-wider group-hiver:md-1 duration-200"
+          >
+            The Dark Night
+          </h1>
+          <p
+            class="w-2/4 lg:w-2/3 text-sm lg:text-base text-gega-grey traking-wider group-hiver:md-1 duration-200"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+            placeat dolores aliquid repudiandae quam molestias quaerat molestiae
+            maiores, provident dolore rerum. Sint necessitatibus error mollitia
+            cumque
+          </p>
+
+          <!-- detail container -->
+          <div
+            class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20 duration-500"
+          >
+            <!-- watch -->
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500"
+                href=""
+                >Watch Trailer</a
+              >
+              <div
+                class="flex justify-center items-center h-8 w-8 text-center bg-gega-red text-gega-grey rounded-full"
+              >
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+
+            <!-- info -->
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500"
+                href=""
+                >Full Synopsis</a
+              >
+              <div
+                class="flex justify-center items-center h-8 w-8 text-center bg-gega-red text-gega-grey rounded-full"
+              >
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- points -->
+      <div
+        class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-200"
+      >
+        <div class="w-4 h-4 rounded-full bg-gega-red"></div>
+        <div class="w-4 h-4 rounded-full bg-gega-grey"></div>
+        <div class="w-4 h-4 rounded-full bg-gega-grey"></div>
+        <div class="w-4 h-4 rounded-full bg-gega-grey"></div>
+      </div>
+    </section>
+
+    <!-- movies section -->
+    <section class="py-24 bg-black">
+      <!-- movies content -->
+      <div class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0">
+        <!-- left content -->
+        <div class="basis-2/3">
+          <!-- titles -->
+          <div class="flex space-x-2 divide-x divide-gega-red divide-opacity-50 mb-8 pl-10 lg:pl-0">
+            <h2><a class="text-gega-red" href="">latest</a></h2>
+            <h2><a class="text-gega-grey pl-2 hover:text-gega-red duration-200" href="">popular</a></h2>
+            <h2><a class="text-gega-grey pl-2 hover:text-gega-red duration-200" href="">best</a></h2>
+          </div>
+
+          <!-- images container -->
+          <div class="flex flex-wrap">
+            <!-- image1 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://gega-project.netlify.app/images/mv1.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-200">
+              <!-- image detail container -->
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:mb-2 group-hover:text-gega-melon duration-200">Oblivion</h3>
+                <p class="text-gega-grey text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-200 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-gega-grey opacity-1 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-200">
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-play"></i></a>
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- image2 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://gega-project.netlify.app/images/mv2.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-200">
+              <!-- image detail container -->
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:mb-2 group-hover:text-gega-melon duration-200">Oblivion</h3>
+                <p class="text-gega-grey text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-200 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-gega-grey opacity-1 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-200">
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-play"></i></a>
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- image3 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://gega-project.netlify.app/images/mv3.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-200">
+              <!-- image detail container -->
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:mb-2 group-hover:text-gega-melon duration-200">Oblivion</h3>
+                <p class="text-gega-grey text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-200 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-gega-grey opacity-1 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-200">
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-play"></i></a>
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- image4 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://gega-project.netlify.app/images/mv4.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-200">
+              <!-- image detail container -->
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:mb-2 group-hover:text-gega-melon duration-200">Oblivion</h3>
+                <p class="text-gega-grey text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-200 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-gega-grey opacity-1 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-200">
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-play"></i></a>
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- image5 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://gega-project.netlify.app/images/mv5.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-200">
+              <!-- image detail container -->
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:mb-2 group-hover:text-gega-melon duration-200">Oblivion</h3>
+                <p class="text-gega-grey text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-200 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-gega-grey opacity-1 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-200">
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-play"></i></a>
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- image6 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://gega-project.netlify.app/images/mv6.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-200">
+              <!-- image detail container -->
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:mb-2 group-hover:text-gega-melon duration-200">Oblivion</h3>
+                <p class="text-gega-grey text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-200 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-gega-grey opacity-1 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-200">
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-play"></i></a>
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+              <!-- image7 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden">
+              <img src="https://gega-project.netlify.app/images/mv1.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-200">
+              <!-- image detail container -->
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:mb-2 group-hover:text-gega-melon duration-200">Oblivion</h3>
+                <p class="text-gega-grey text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-200 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-gega-grey opacity-1 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-200">
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-play"></i></a>
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+              <!-- image8 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden">
+              <img src="https://gega-project.netlify.app/images/mv2.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-200">
+              <!-- image detail container -->
+              <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:mb-2 group-hover:text-gega-melon duration-200">Oblivion</h3>
+                <p class="text-gega-grey text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-200 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia.</p>
+                <!-- icons container -->
+                <div class="absolute flex space-x-8 text-gega-grey opacity-1 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-200">
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-play"></i></a>
+                  <a href="" class="hover:text-gega-red duration-200"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+
+        <!-- right content -->
+        <div class="basis-1/3 pl-10 lg:pl-0">
+          <!-- titles -->
+          <h2 class="text-gega-grey mb-8">Hot News</h2>
+          <!-- news container -->
+          <div class="flex flex-row lg:flex-col h-full pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4">
+             <!-- item1 -->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <div class="basis-1/3 h-full">
+                <img class="h-full w-full object-cover" src="https://gega-project.netlify.app/images/new1.jpg">
+              </div>
+              <div class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-200 pl-8">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo.</p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOV 01 2022</p>
+              </div>
+            </div>
+
+            <!-- item2 -->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <div class="basis-1/3 h-full">
+                <img class="h-full w-full object-cover" src="https://gega-project.netlify.app/images/new2.jpg">
+              </div>
+              <div class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-200 pl-8">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo.</p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOV 01 2022</p>
+              </div>
+            </div>
+
+            <!-- item3 -->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <div class="basis-1/3 h-full">
+                <img class="h-full w-full object-cover" src="https://gega-project.netlify.app/images/new3.jpg">
+              </div>
+              <div class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-200 pl-8">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo.</p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOV 01 2022</p>
+              </div>
+            </div>
+
+            <!-- item4 -->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <div class="basis-1/3 h-full">
+                <img class="h-full w-full object-cover" src="https://gega-project.netlify.app/images/new4.jpg">
+              </div>
+              <div class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-200 pl-8">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo.</p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOV 01 2022</p>
+              </div>
+            </div>
+
+            <!-- item5 -->
+            <div class="flex items-center group basis-3/4 md:basis-1/2 md:hidden lg:flex">
+              <div class="basis-1/3 h-full">
+                <img class="h-full w-full object-cover" src="https://gega-project.netlify.app/images/new5.jpg">
+              </div>
+              <div class="basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-200 pl-8">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, explicabo.</p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOV 01 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- matrix section -->
+    <section class="bg-gega-white">
+      <!-- matrix section container -->
+      <div class="container flex items-center justify-center relative pl-10 md:pl-0">
+        <!-- left content -->
+        <div class="hidden md:block md:basis-1/3 lg:basis-1/2">
+          <img src="https://gega-project.netlify.app/images/matrix.png" class="lg:absolute lg:bottom-0">
+        </div>
+        
+        <!-- right content -->
+        <div class="md:basis-1/2 lg:basis-1/2">
+          <!-- right content container -->
+          <div class="flex flex-col justify-center py-10 w-3/4 md:w-full">
+            <h3 class="traking-wider text-gega-melon">ACTION, DRAMA, THRILLER</h3>
+            <h2>Matrix Reloaded</h2>
+            <p class="text-sm mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vero sequi sapiente eveniet laudantium et labore. Necessitatibus eveniet et porro sapiente iure.</p>
+            <h3 class="traking-wider text-gega-red">8 WINS 34 NOMINATIONS</h3>
+          </div>
+        </div>
+        <!--  -->
+
+
+        <!-- oldie -->
+        <div class="left-10 absolute -top-12 lg:left-0 w-20 h-20 bg-gega-melon rounded-full flex items-center text-center -rotate-45">
+          <p class="font-gemunu uppercase font-bold text-xl text-gray-red">Oldie & Goldie</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- post section -->
+    <section class="py-24 bg-black text-gega-grey">
+      <!-- container -->
+      <div class="container px-10 lg:px-10">
+        <!-- title -->
+        <h2 class="text-gega-red"><a href="">popular post</a></h2>
+
+        <!-- grid area -->
+        <div class="grid grid-cols-6 gap-10">
+          <!-- item 1 -->
+          <div class="col-span-6 md:col-span-3 border border-gega-red">
+            <!-- item 1 header -->
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img class="rounded-full" src="https://gega-project.netlify.app/images/userava1.jpg"/>              
+            </div>
+
+            <!-- item 1 p -->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis praesentium aspernatur nihil blanditiis quo cumque velit nemo ab dolor magni.</p>
+
+            <!-- item 1 footer -->
+            <div class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="col-span-6 md:col-span-3 border border-gega-red">
+            <!-- item 2 header -->
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img class="rounded-full" src="https://gega-project.netlify.app/images/userava2.jpg"/>              
+            </div>
+
+            <!-- item 2 p -->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis praesentium aspernatur nihil blanditiis quo cumque velit nemo ab dolor magni.</p>
+
+            <!-- item 2 footer -->
+            <div class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- item 3 -->
+          <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-gega-red">
+            <!-- item 3 header -->
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img class="rounded-full" src="https://gega-project.netlify.app/images/userava3.jpg"/>              
+            </div>
+
+            <!-- item 3 p -->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis praesentium aspernatur nihil blanditiis quo cumque velit nemo ab dolor magni.</p>
+
+            <!-- item 3 footer -->
+            <div class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 4 -->
+          <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-gega-red">
+            <!-- item 4 header -->
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img class="rounded-full" src="https://gega-project.netlify.app/images/userava4.jpg"/>              
+            </div>
+
+            <!-- item 4 p -->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis praesentium aspernatur nihil blanditiis quo cumque velit nemo ab dolor magni.</p>
+
+            <!-- item 4 footer -->
+            <div class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 5 -->
+          <div class="hidden lg:block lg:col-span-2 border border-gega-red">
+            <!-- item 5 header -->
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img class="rounded-full" src="https://gega-project.netlify.app/images/userava5.jpg"/>              
+            </div>
+
+            <!-- item 5 p -->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis praesentium aspernatur nihil blanditiis quo cumque velit nemo ab dolor magni.</p>
+
+            <!-- item 5 footer -->
+            <div class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-black text-gega-grey">
+      <div class="container flex flex-col md:flex-row justify-between px-10 lg:px-10 pb-8 ">
+        <!-- left content -->
+        <div class="basic-1/3">
+          <a
+          href=""
+          class="text-2xl lg:text-3xl font-bold text-gega-grey text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey"
+          >GEGA</a
+        >
+          <p class="text-sm my-2">2022 ArinSOFT No © COPYRIGHT</p>
+        </div>
+        
+        <!-- center content -->
+        <div class="basic-1/3">
+          <h2 class="mb-2 text-gega-red">LIKES</h2>
+          <div class="grid grid-cols-5 gap-2 uppercase">
+            <a class="col-span-2 hover:text-gega-melon duration-200" href="">Movies</a>
+            <a class="col-span-2 hover:text-gega-melon duration-200" href="">Celebrities</a>
+            <a class="col-span-2 hover:text-gega-melon duration-200" href="">Blog</a>
+            <a class="col-span-2 hover:text-gega-melon duration-200" href="">News</a>
+            <a class="col-span-2 hover:text-gega-melon duration-200" href="">About</a>
+          </div>
+        </div>
+        <!-- right content -->
+        <div class="basic-1/3">
+          <h2 class="mb-2 text-gega-red">FOLLOW US</h2>
+          <form class="flex uppercase" action="">
+            <input class="py-1 bg-transparent border border-gega-red placeholder:text-xs outline-none" type="text" placeholder="TYPE YOUR EMAIL">
+            <button class="py-1 border border-gega-red bg-gega-red font-gemunu ">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  
+    <script src="./public/js/main.js"></script>
+  </body>
+</html>
