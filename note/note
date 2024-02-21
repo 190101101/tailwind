@@ -1,12 +1,15 @@
-base\youtube 01\01 installation
-base\youtube 01\02 tailwind configs
-base\youtube 01\04 flex
-base\youtube 01\05 responsive design
-base\youtube 01\07 section group position
-base\youtube 01\08 flex basis
-base\youtube 01\09 responsive design
-base\youtube 01\10 matrix section
-base\youtube 01\11 grid
-base\youtube 01\12 footer
-base\youtube 01\13 dark mode
-base\youtube 01\14 deploy
+base\01 docs\01 grid\01 grid template columns
+
+base\02 youtube\01 installation
+base\02 youtube\02 tailwind configs
+base\02 youtube\04 flex
+base\02 youtube\05 responsive design
+base\02 youtube\07 section group position
+base\02 youtube\08 flex basis
+base\02 youtube\09 responsive design
+base\02 youtube\10 matrix section
+base\02 youtube\11 grid
+base\02 youtube\12 footer
+base\02 youtube\13 dark mode
+base\02 youtube\14 deploy
+
